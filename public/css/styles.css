@@ -1,0 +1,11 @@
+.hidden {
+    display: none !important;
+}
+
+.sub_title {
+    font-size: 0.9rem;
+}
+
+.sub_sub_title {
+    font-size: 0.7rem;
+}

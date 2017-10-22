@@ -1,0 +1,5 @@
+mixin gen-chart(percent, name, metrics)
+  div(class='col-md')
+    p #{name}: #{percent}%
+    div(class='chart' data-percent=percent data-scale-color='#ffb400')
+    br

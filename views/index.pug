@@ -1,0 +1,32 @@
+extends includes/layout.pug
+block content
+  div(class='panel panel-default')
+    div(class='panel-body')
+      div(class='panel-body')
+        form#formData
+          label Digite o seu nome (*)
+          input(class='form-control col-md-4' type='text' name='name' required)
+          br
+          h3 Responda o questionário abaixo
+          br
+          div(class='alert alert-danger alert-dismissible fade show hidden' role='alert')
+            span Erro ao enviar o formulário. Tente novamente mais tarde.
+          div(class='alert alert-success alert-dismissible fade show hidden' role='alert')
+            span Formulário enviado com sucesso!
+          div
+            div(class='form-group')
+              label 1. Dentro do ambiente profissional, o que mais incomoda você nas outras pessoas? (*)
+              textarea(name='q1' class='form-control' rows='5' required)
+            div(class='form-group')
+              label 2. Pense num colega de trabalho que virou seu amigo. Porque vocês se dão tão bem? (*)
+              textarea(name='q2' class='form-control' rows='5' required)
+            div(class='form-group')
+              label 3. Do que você sente mais orgulho em sua vida? Por quê? (*)
+              textarea(name='q3' class='form-control' rows='5' required)
+            div(class='form-group')
+              label 4. Se tivesse a sua própria empresa, que tipo de pessoa contrataria e por quê? (*)
+              textarea(name='q4' class='form-control' rows='5' required)
+            div(class='form-group')
+              label 5. Conte-nos sobre um erro que tenha cometido. Como o resolveu? (*)
+              textarea(name='q5' class='form-control' rows='5' required)
+            input(class='btn btn-primary' type='submit' value='Enviar')
